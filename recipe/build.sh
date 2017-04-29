@@ -7,6 +7,7 @@ fi
 if [ "$(uname)" == "Linux" ]
 then
     # export CXXFLAGS="${CXXFLAGS} -L${PREFIX}/lib -lquadmath -lgfortran"
+    export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${PREFIX}/lib"
     export CXXFLAGS="${CXXFLAGS} -L${PREFIX}/lib"
 fi
 
